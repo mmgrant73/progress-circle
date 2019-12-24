@@ -15,7 +15,7 @@ It is quite easy to use it on your webpage. Just follow the below steps:
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-'
+
 
 2. Include the link to the script file that holds the this custom web component (progress-circle.js) near the bottom of 
    the body section of your webpage.  See below
@@ -24,13 +24,13 @@ It is quite easy to use it on your webpage. Just follow the below steps:
 
     <script src="./progresscircle.js"></script>
     
-'
+
 
 3)  Then use the custom element tags on your webpage.
 
 '
     <progress-circle>Test</progres-circle>
-'
+
 
 That is all you have to do to use this custom element.  There is an example HTML page (progress-circle.html) that shows how to use it.
 
@@ -57,9 +57,9 @@ That is all you have to do to use this custom element.  There is an example HTML
 	  </body>
 	</html>
 	
-'
 
-###There are 8 properties (7 attributes and the innerHTML) that you can use to customize this element.
+
+### There are 8 properties (7 attributes and the innerHTML) that you can use to customize this element.
 
 1. total - Is the total number of section for the progressbar.  The max number
 2. current - Is the current status of the progressbar thus if it's set to 4 and total to 10 then the progress bar would be 40% filled
