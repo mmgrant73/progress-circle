@@ -1,0 +1,26 @@
+{
+  "name": "progress-circle",
+  "version": "1.0.1",
+  "description": "A circular progress bar, custom web component",
+  "main": "progresscircle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "progressbar",
+    "html",
+    "javascript",
+    "web",
+    "component",
+    "custom",
+    "element",
+    "custom",
+    "html",
+    "html",
+    "tag",
+    "custom",
+    "tag"
+  ],
+  "author": "Matthew Grant",
+  "license": "MIT"
+}
