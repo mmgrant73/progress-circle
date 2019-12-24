@@ -6,7 +6,6 @@ When you click on this HTML element it will display a modal that you can customi
 and the modal will disppear.  There is an image of it below.
 
 ![Alt text](/progress-circle.png?raw=true "Circle Progressbar")
-![alt text](https://github.com/mmgrant73/progress-circle/progress-circle.png "Progress-Circle")
 
 ### How to use it?
 It is quite easy to use it on your webpage. Just follow the below steps:
