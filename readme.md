@@ -11,7 +11,7 @@ and the modal will disppear.  There is an image of it below.
 It is quite easy to use it on your webpage. Just follow the below steps:
 1. Include the icon link in your header.  For example if you are using Font Awesome 4 it would be
 
-
+`
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 
@@ -19,7 +19,7 @@ It is quite easy to use it on your webpage. Just follow the below steps:
 2. Include the link to the script file that holds the this custom web component (progress-circle.js) near the bottom of 
    the body section of your webpage.  See below
    
-
+`
 
     <script src="./progresscircle.js"></script>
     
@@ -27,7 +27,7 @@ It is quite easy to use it on your webpage. Just follow the below steps:
 
 3)  Then use the custom element tags on your webpage.
 
-
+`
     <progress-circle>Test</progres-circle>
 
 
