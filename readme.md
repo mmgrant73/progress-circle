@@ -5,7 +5,7 @@ Progress-Circle is a custom web component that wraps a progress bar around an Ic
 When you click on this HTML element it will display a modal that you can customize.  Click on it again
 and the modal will disppear.  There is an image of it below.
 
-![alt text](https://github.com/mmgrant73/progress-circle/progres-circle.png "Progress-Circle")
+![alt text](https://github.com/mmgrant73/progress-circle/progress-circle.png "Progress-Circle")
 
 ### How to use it?
 It is quite easy to use it on your webpage. Just follow the below steps:
