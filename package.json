@@ -22,5 +22,16 @@
     "tag"
   ],
   "author": "Matthew Grant",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmgrant73/progress-circle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mmgrant73/progress-circle/issues"
+  },
+  "homepage": "https://github.com/mmgrant73/progress-circle#readme",
+  "dependencies": {
+    "ampjs": "^1.0.1"
+  }
 }

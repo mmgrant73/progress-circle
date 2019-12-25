@@ -129,6 +129,7 @@ class Progresscircle extends HTMLElement {
   }
   
   showtest = (evt) => {
+	this.toolbody.innerHTML = this.innerHTML;
 	var x = this.tooltip.style.visibility;
 	if(x=='hidden'){
 		this.tooltip.style.visibility = "visible";

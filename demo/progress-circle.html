@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- You must link in the file that holds the icon type that you are using like I did below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Progress Circle</title>
+	<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		
+		<script>
+		    function customize(){
+			    var total = document.getElementById("total").value;
+				var current = document.getElementById("current").value;
+				var badgetext = document.getElementById("badgetext").value;
+				var bgcolor = document.getElementById("bgcolor").value;
+				var progresscolor = document.getElementById("progresscolor").value;
+				var icontype = document.getElementById("icontype").value;
+				var modaltitle = document.getElementById("modaltitle").value;
+				var modalbody = document.getElementById("modalbody").value;
+				icontype = "fa fa-" + icontype;
+				
+				var x = document.getElementsByTagName("progress-circle")[0]; 
+				x.setAttribute("total", total);
+				x.setAttribute("current", current);
+				x.setAttribute("badgetext", badgetext);
+				x.setAttribute("bgcolor", bgcolor);
+				x.setAttribute("progresscolor", progresscolor);
+				x.setAttribute("icontype", icontype);
+				x.setAttribute("modaltitle", modaltitle);
+				document.getElementsByTagName("progress-circle")[0].innerHTML = modalbody;
+				//alert(modalbody);
+			}
+		</script>
+
+  </head>
+  <body>
+    
+	<h2 style="text-align: center;">This is a test of the progress-circle component</h2>
+	
+	<form class=""form-inline" action="/action_page.php">
+
+        Background Color:
+		<input type="color" name="favcolor" id="bgcolor" value="#ff0000">
+
+
+      Progressbar Color:
+	  <input type="color" name="favcolor" id="progresscolor" value="#ff0000">
+
+
+      Total (1-100)
+	  <input type="number" name="quantity" min="1" max="100" id="total" value="10">
+
+
+      Current (1-100) 
+	  <input type="number" name="quantity" min="1" max="100" id="current" value="5">
+	  
+	  Badge Text
+	  <input type="text" id="badgetext" placeholder="10">
+	  
+	    Icon
+		<select  id="icontype">
+		  <option>car</option>
+		  <option>thumbs-up</option>
+		  <option>address-card</option>
+		  <option>anchor</option>
+		  <option>bank</option>
+		</select>
+
+	</form>
+	
+	<form>
+	  <div class="form-group">
+		<label for="formGroupExampleInput">Modal Title</label>
+		<input type="text" class="form-control" id="modaltitle" placeholder="Title">
+	  </div>
+	  <div class="form-group">
+		<label for="formGroupExampleInput2">Modal Body</label>
+		<input type="text" class="form-control" id="modalbody" placeholder="Body">
+	  </div>
+	  <button type="button" class="btn btn-warning btn-lg btn-block" onclick="customize()">Submit</button>
+	</form>
+	
+	<div class="m-1 p-1">
+	<progress-circle total="10" current="5" badgetext="5" bgcolor="yellow" progresscolor="green" icontype="fa fa-thumbs-up" modaltitle="Modal Title" >
+		<p>Description of the Modal</p>					
+		<button type="button">Link</button>
+	</progress-circle>
+	</div>
+	
+	<!-- You must include the line below as it holds the code of this custom element -->
+	<script src="../progresscircle.js"></script>
+
+  </body>
+</html>
