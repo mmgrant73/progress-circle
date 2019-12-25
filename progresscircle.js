@@ -113,8 +113,6 @@ class Progresscircle extends HTMLElement {
 	this.toolbody = this._shadowRoot.querySelector('div#modalx');
 	this.pc = this._shadowRoot.querySelector('#progresscircle');
 	this.toolbody.innerHTML = this.innerHTML;
-	//this.icon1.setAttribute('class', this.icontype); 
-    //this.getpath();
   }
   connectedCallback() {
 	  this.pc.addEventListener('click', this.showtest);
@@ -122,10 +120,6 @@ class Progresscircle extends HTMLElement {
   
   disconnectedCallback() {
       this.pc.removeEventListener("click", this.showtest);
-  }
-  
-  comeon(){
-	alert(this.badge);
   }
   
   showtest = (evt) => {
@@ -176,18 +170,13 @@ class Progresscircle extends HTMLElement {
 			const [eX, eY] = ( f_vec_add ( f_matrix_times ( rotMatrix, [rx * cos(t1+delta), ry * sin(t1+delta)] ), [cx,cy] ) );
 			const fA = ( (  delta > pi ) ? 1 : 0 );
 			const fS = ( (  delta > 0 ) ? 1 : 0 );
-			//path_2wk2r.setAttribute("d", "M " + sX + " " + sY + " A " + [ rx , ry , φ / (2*π) *360, fA, fS, eX, eY ].join(" "));
 			var path1 = "M " + sX + " " + sY + " A " + rx + " " + ry + " " + String(w1 / (2*pi) *360) + " " + fA + " " + fS + " " + eX + " " + eY
 			return path1
 		});
-			
-		//var total = document.getElementsByClassName("badge1")[0].getAttribute("data-total");
-		//var current = document.getElementsByClassName("badge1")[0].getAttribute("data-current");			
+					
 		var d = (360/this.total) * this.current;
 		var r = (d * 3.142)/180;
 		let path = f_svg_ellipse_arc([50,50],[45,45], [0, r], 1.5708 );
-		//var x = document.getElementById("cgroup");
-		//x.querySelector("path").setAttribute("d", path);
 		this.progress.setAttribute("d", path);
   }
   
